@@ -1,0 +1,18 @@
+product_id,name,category,brand,price,rating,stock_quantity,description,ram,storage,battery,camera,processor
+LAP001,Lenovo IdeaPad Slim 5,Laptop,Lenovo,62000,4.4,12,"Laptop suitable for programming, multitasking and everyday productivity with a sharp display.",16GB,512GB SSD,8 hours,,Intel Core i5
+LAP002,HP Pavilion 15,Laptop,HP,68000,4.5,7,"Performance laptop for students, programming, office work and multitasking.",16GB,1TB SSD,7 hours,,Intel Core i5
+LAP003,ASUS VivoBook 15,Laptop,ASUS,55000,4.3,15,"Affordable laptop for coding, study and productivity with solid everyday performance.",16GB,512GB SSD,8 hours,,AMD Ryzen 5
+LAP004,Acer Aspire 7,Laptop,Acer,64999,4.2,5,"Versatile laptop for development, multitasking and light creative workloads.",16GB,512GB SSD,6 hours,,AMD Ryzen 5
+LAP005,Dell Inspiron 14,Laptop,Dell,69999,4.1,0,"Portable laptop for programming and professional productivity with SSD storage.",16GB,512GB SSD,8 hours,,Intel Core i7
+PHN001,Samsung Galaxy A55,Smartphone,Samsung,24999,4.4,18,"Smartphone with versatile camera, AMOLED display and dependable battery life.",8GB,256GB,1.5 days,50MP,Exynos
+PHN002,OnePlus Nord CE 4,Smartphone,OnePlus,23999,4.3,9,"Fast smartphone with smooth display, good battery and capable everyday camera.",8GB,128GB,1.5 days,50MP,Snapdragon
+PHN003,Nothing Phone 2a,Smartphone,Nothing,22999,4.2,11,"Distinctive design, clean software, capable camera and balanced performance.",8GB,128GB,1.5 days,50MP,Dimensity
+PHN004,Redmi Note 13 Pro,Smartphone,Xiaomi,21999,4.3,20,"Feature-rich smartphone with high-resolution camera and AMOLED display.",8GB,256GB,1.5 days,200MP,Snapdragon
+PHN005,Motorola Edge 50 Fusion,Smartphone,Motorola,24999,4.4,0,"Slim smartphone with curved display, optical image stabilization and clean software.",8GB,256GB,1.5 days,50MP,Snapdragon
+AUD001,Sony WH-CH720N,Headphones,Sony,8990,4.5,14,"Wireless over-ear headphones with active noise cancellation and long battery life.",,,"35 hours",,Bluetooth
+AUD002,boAt Nirvana 751,Headphones,boAt,2999,4.1,30,"Affordable wireless headphones with active noise cancellation and comfortable fit.",,,"65 hours",,Bluetooth
+AUD003,JBL Tune 770NC,Headphones,JBL,5999,4.4,8,"Wireless headphones with adaptive noise cancelling and powerful sound.",,,"70 hours",,Bluetooth
+WAT001,Apple Watch SE,Smartwatch,Apple,24900,4.5,4,"Smartwatch with fitness tracking, notifications and health-related activity features.",,,"18 hours",,Apple S8
+WAT002,Samsung Galaxy Watch FE,Smartwatch,Samsung,16999,4.2,6,"Smartwatch with fitness tracking, sleep insights and smartphone notifications.",,,"40 hours",,Exynos
+BAG001,American Tourister Urban Groove,Backpack,American Tourister,1799,4.2,25,"Everyday backpack with laptop compartment, padded straps and multiple pockets.",,,,"",Polyester
+BAG002,Wildcraft Wiki 2,Backpack,Wildcraft,1499,4.1,17,"Durable casual backpack suitable for college and daily commuting.",,,,"",Polyester

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101114" />
+  <title>ShopSage — Find your next favorite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-icon"><span></span><span></span></span>
+      <span>shop<span class="brand-accent">sage</span></span>
+      <span class="brand-ai">AI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#assistant" class="nav-link active">AI assistant</a>
+      <a href="#catalog" class="nav-link">Explore products</a>
+    </nav>
+    <div class="top-actions">
+      <span class="local-pill"><i></i> Local AI</span>
+      <button class="icon-button" id="newChatTop" title="New conversation" aria-label="New conversation">↗</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR PERSONAL SHOPPING INTELLIGENCE</div>
+        <h1>Good finds.<br><em>Great decisions.</em></h1>
+        <p>Tell us what you're looking for. ShopSage searches, compares and helps you choose with confidence.</p>
+        <a class="hero-cta" href="#assistant">Start exploring <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-orb"><div class="orb-shine"></div><div class="orb-core">✳</div></div>
+        <div class="float-card float-card-top"><span class="float-dot"></span> Smart product discovery</div>
+        <div class="float-card float-card-bottom"><span class="mini-stars">★★★★★</span><b>Better picks, less scrolling.</b></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+      <div class="hero-bottom">
+        <span>DISCOVER WITH INTENTION</span>
+        <span class="hero-bottom-line"></span>
+        <span>BUILT AROUND WHAT YOU NEED</span>
+      </div>
+    </section>
+
+    <section class="assistant-section section-wrap" id="assistant">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow muted"><span class="eyebrow-line"></span> THE SHOPPING DESK</div>
+          <h2>What can we find <em>for you?</em></h2>
+          <p>Ask naturally. We'll take it from there.</p>
+        </div>
+        <div class="assistant-status"><span class="status-pulse"></span><span id="agentStatus">Assistant ready</span></div>
+      </div>
+
+      <div class="assistant-shell">
+        <div class="chat-panel">
+          <div class="chat-header">
+            <div class="assistant-avatar">✳</div>
+            <div><strong>ShopSage assistant</strong><small>Your product research partner</small></div>
+            <button class="text-button" id="newChat">New chat ↗</button>
+          </div>
+          <div class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+              <div class="welcome-icon">✳</div>
+              <h3>Let's find your <em>perfect pick.</em></h3>
+              <p>Share a product, a budget, or a feature that matters to you.</p>
+            </div>
+          </div>
+          <div class="chat-compose">
+            <textarea id="chatInput" rows="1" placeholder="E.g. Find me noise-cancelling headphones under ₹6,000..." maxlength="2000"></textarea>
+            <div class="compose-bottom">
+              <span><kbd>Enter</kbd> to send · <kbd>Shift + Enter</kbd> for a new line</span>
+              <button id="sendButton" class="send-button" aria-label="Send message"><span>Send</span><b>↑</b></button>
+            </div>
+          </div>
+        </div>
+        <aside class="suggestions-panel">
+          <div class="suggestions-title"><span>✧</span> TRY ASKING</div>
+          <button class="suggestion" data-prompt="Find a laptop under ₹70,000 with 16GB RAM for programming."><span class="suggestion-icon">⌘</span><span><b>Find my next laptop</b><small>Performance, budget & specs</small></span><i>↗</i></button>
+          <button class="suggestion" data-prompt="Compare the best two laptops under ₹65,000."><span class="suggestion-icon">⇄</span><span><b>Compare two options</b><small>See the trade-offs clearly</small></span><i>↗</i></button>
+          <button class="suggestion" data-prompt="Find a smartphone under ₹25,000 with a good camera."><span class="suggestion-icon">◉</span><span><b>Shop by a feature</b><small>Camera, battery or display</small></span><i>↗</i></button>
+          <button class="suggestion" data-prompt="Which headphones have the longest battery life?"><span class="suggestion-icon">♫</span><span><b>Find the best battery</b><small>Compare real catalog specs</small></span><i>↗</i></button>
+          <div class="suggestion-note"><span>✦</span><p><b>A little more detail goes a long way.</b><br>Tell ShopSage your budget, preferred brand or must-have features for sharper recommendations.</p></div>
+        </aside>
+      </div>
+      <div class="diagnostic-row"><span id="connectionState"><i></i> Checking local connection…</span><span>Product facts are retrieved from the local catalog</span></div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="catalog">
+      <div class="catalog-heading">
+        <div>
+          <div class="eyebrow muted"><span class="eyebrow-line"></span> THE EDIT</div>
+          <h2>Explore the <em>catalog.</em></h2>
+          <p>A considered collection of products, ready to discover.</p>
+        </div>
+        <div class="catalog-count"><strong id="productCount">—</strong><span>products to explore</span></div>
+      </div>
+      <div class="catalog-toolbar">
+        <label class="search-field"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products, brands..." /></label>
+        <select id="categoryFilter" aria-label="Filter by category"><option value="All">All categories</option></select>
+        <select id="sortFilter" aria-label="Sort products">
+          <option value="recommended">Recommended</option>
+          <option value="price_low">Price: low to high</option>
+          <option value="price_high">Price: high to low</option>
+          <option value="rating">Top rated</option>
+        </select>
+        <label class="budget-filter"><span>Max price</span><input id="maxPrice" type="number" min="0" placeholder="Any budget" /></label>
+        <label class="stock-filter"><input id="inStock" type="checkbox" /> In stock</label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <div class="loading-card">Curating the catalog…</div>
+      </div>
+      <div class="catalog-footer"><span>SHOP WITH CLARITY</span><span class="footer-rule"></span><span id="catalogFooterCount">LOCAL PRODUCT COLLECTION</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-icon"><span></span><span></span></span><span>shop<span class="brand-accent">sage</span></span><span class="brand-ai">AI</span></a>
+    <span>Thoughtful discovery. Smarter shopping.</span>
+    <span class="footer-right">© 2026 SHOP SAGE</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
